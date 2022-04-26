@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  
+  consignment:
+    restart:
+        always
+    image:
+        consignment-service
+    depends_on:
+        - vessel
+    ports:
+        - 50051:50051
+    environment:
+      MICRO_SERVER_ADDRESS:
+             ":50051"
+      DB_HOST: "mongodb+srv://brayo:brayo@myblogcluster.976g4.mongodb.net/shippy?retryWrites=true&w=majority"
+ 
+  vessel: 
+    image: vessel-service
+    ports:
+      - 50052:50051
+    environment:
+      MICRO_SERVER_ADDRESS: ":50051"
+
+  cli:
+    restart: always
+    image: shippy-client
+    depends_on:
+      - consignment
+      - vessel
+
