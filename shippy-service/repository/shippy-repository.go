@@ -43,3 +43,5 @@ func (r *shippy_repository) CreateConsignment(ctx context.Context, _consignment 
 	result_id := result.InsertedID
 	return result_id, nil
 }
+
+// func createLogger()func()*lo

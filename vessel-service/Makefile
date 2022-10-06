@@ -3,4 +3,9 @@ gen:
 build:
 	sudo docker build -t vessel-service .
 run:
-	sudo docker run vessel-service
+	sudo docker run  --name=vessel_service vessel-service
+
+mockery:
+	
+genMocks:
+	mockery --all --keeptree

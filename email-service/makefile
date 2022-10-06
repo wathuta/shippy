@@ -1,0 +1,1 @@
+  protoc --proto_path=./ --go_out=./proto/chat --micro_out=./proto/chat  proto/chat/chat.proto

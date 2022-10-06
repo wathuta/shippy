@@ -4,8 +4,8 @@ option go_package="./;vessel";
 
 
 service VesselService {
-    rpc FindAvailable(Specification) returns (Response) {}
-    rpc Create(Vessel)returns(Response){}
+    rpc FindAvailableVessel(Specification) returns (Response) {}
+    rpc CreateVessel(Vessel)returns(Response){}
   }
 message Vessel{
     string id=1;

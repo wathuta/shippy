@@ -1,0 +1,31 @@
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/vessel-service/repository/vessel_repository.go:57",
+  "func": "vessel_service/repository.(*vessel_Repository).Create",
+  "level": "info",
+  "msg": "ObjectID(\"62b5a230c43026c7d4baf82f\")",
+  "service": "Vessel_service",
+  "time": "2022-06-24T14:38:25+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/vessel-service/repository/vessel_repository.go:57",
+  "func": "vessel_service/repository.(*vessel_Repository).Create",
+  "level": "info",
+  "msg": "ObjectID(\"62b5a238c43026c7d4baf830\")",
+  "service": "Vessel_service",
+  "time": "2022-06-24T14:38:32+03:00"
+}
+home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/vessel-service/rabbit/vessel_queue.go:78",
+  "func": "vessel_service/rabbit.(*VesselQueue).WorkerPool",
+  "level": "info",
+  "msg": "Process Deliveried deliveryTag VESSEL_FIND_ALL",
+  "service": "Vessel_service",
+  "time": "2022-06-24T14:38:32+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/vessel-service/rabbit/vessel_queue.go:78",
+  "func": "vessel_service/rabbit.(*VesselQueue).WorkerPool",
+  "level": "info",
+  "msg": "Process Deliveried deliveryTag VESSEL_CREATION",
+  "service": "Vessel_service",
+  "time": "2022-06-24T14:38:32+03:00"
+}

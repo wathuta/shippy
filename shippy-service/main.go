@@ -2,26 +2,32 @@ package main
 
 import (
 	"context"
+	"errors"
 	"log"
 	"os"
 
 	"github.com/joho/godotenv"
 	"github.com/wathuta/shippy-service/proto/consignment"
+	"github.com/wathuta/shippy-service/proto/user"
 	"github.com/wathuta/shippy-service/proto/vessel"
+
 	"go.mongodb.org/mongo-driver/mongo"
 
 	"github.com/wathuta/shippy-service/configs"
 	"github.com/wathuta/shippy-service/repository"
 	"github.com/wathuta/shippy-service/services"
 	micro "go-micro.dev/v4"
+	"go-micro.dev/v4/metadata"
+	"go-micro.dev/v4/server"
 )
 
 var (
-	client *mongo.Client
+	client  *mongo.Client
+	service micro.Service
 )
 
 func init() {
-	if err := godotenv.Load(".env"); err != nil {
+	if err := godotenv.Load("vars.env"); err != nil {
 		log.Printf("Loading env file error %v", err)
 		log.Println("searching for environment variables")
 	}
@@ -37,7 +43,7 @@ func init() {
 }
 
 func main() {
-	service := micro.NewService(micro.Name("consignment-service"))
+	service = micro.NewService(micro.Name("shippy.consignment"), micro.Version("latest"), micro.WrapHandler(AuthWrapper))
 	service.Init()
 
 	//to do add a collection and connect to mongodb
@@ -46,22 +52,10 @@ func main() {
 	defer client.Disconnect(context.Background())
 	//
 	repo := repository.New_shippy_repository(collection)
-	vess := vessel.NewVesselService("vessel-service", service.Client())
+	vess := vessel.NewVesselService("shippy.vessel", service.Client())
 	if vess == nil {
 		log.Fatal(vess)
 	}
-
-	/**/
-	spec := vessel.Specification{Capacity: 500, MaxWeight: 55000}
-	vesselresponse, err := vess.FindAvailable(context.Background(), &spec)
-	if err != nil {
-		log.Println(err)
-		os.Exit(1)
-	}
-	log.Println(vesselresponse)
-	// log.Fatal(vess).
-	/**/
-
 	shippy_service := services.New_shippy_service(repo, vess)
 
 	if err := consignment.RegisterShippingServiceHandler(service.Server(), shippy_service); err != nil {
@@ -69,5 +63,26 @@ func main() {
 	}
 	if err := service.Run(); err != nil {
 		log.Fatal(err)
+	}
+}
+func AuthWrapper(fn server.HandlerFunc) server.HandlerFunc {
+	return func(ctx context.Context, req server.Request, resp interface{}) error {
+		if os.Getenv("DISABLE_AUTH") == "true" {
+			return fn(ctx, req, resp)
+		}
+		meta, ok := metadata.FromContext(ctx)
+		if !ok {
+			return errors.New("no auth meta-data found in request")
+		}
+		token := meta["Token"]
+		log.Println("Authenticating with token", token)
+
+		authclient := user.NewUserService("shippy.user", service.Client())
+		_, err := authclient.ValidateToken(context.Background(), &user.Token{Token: token})
+		if err != nil {
+			return err
+		}
+		err = fn(ctx, req, resp)
+		return err
 	}
 }

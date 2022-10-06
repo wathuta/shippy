@@ -20,6 +20,8 @@ RUN apk --no-cache add ca-certificates
 RUN mkdir /app
 WORKDIR /app
 
+ADD vars.env /app/vars.env
+
 COPY --from=builder /app/vessel-service .
 
 CMD ["./vessel-service"]

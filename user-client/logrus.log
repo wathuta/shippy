@@ -1,0 +1,164 @@
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:85",
+  "func": "main.main",
+  "level": "error",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "00-00-0000"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:86",
+  "func": "main.main",
+  "level": "warning",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "00-00-0000"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:85",
+  "func": "main.main",
+  "level": "error",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "dd-mm-yyyy"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:86",
+  "func": "main.main",
+  "level": "warning",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "dd-mm-yyyy"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:85",
+  "func": "main.main",
+  "level": "error",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "2022-05-18T11:55:51+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:86",
+  "func": "main.main",
+  "level": "warning",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "2022-05-18T11:55:51+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:85",
+  "func": "main.main",
+  "level": "error",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "2022-05-18T11:56:11+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:86",
+  "func": "main.main",
+  "level": "warning",
+  "msg": "DB logs{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"service user-service: not found\",\"status\":\"Internal Server Error\"}",
+  "service": "vessel service",
+  "time": "2022-05-18T11:56:11+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:85",
+  "func": "main.main",
+  "level": "error",
+  "msg": "DB logstoken is expired by 89h25m57s",
+  "service": "vessel service",
+  "time": "2022-05-21T13:05:15+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:86",
+  "func": "main.main",
+  "level": "warning",
+  "msg": "DB logstoken is expired by 89h25m57s",
+  "service": "vessel service",
+  "time": "2022-05-21T13:05:15+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{1 2022-05-21 13:30:00.787812 +0300 EAT 2022-05-21 13:30:00.787812 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambugu Tangazo letu wathutawambugu@gmail.com $2a$10$.gileVK2xfqTxAI5fe6St.M/I4C5M53Nc5e6DZ5bZhR6bdpzAxuOu}",
+  "time": "2022-05-21T13:34:08+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{2 2022-05-21 13:38:05.04637 +0300 EAT 2022-05-21 13:38:05.04637 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambugu Tangazo letu wathutambugu@gmail.com $2a$10$jn0oEelJXAS60OWvjN7s3.JqZk2NBKZ4pZ4lVzcxc9ZErsZDbRn0a}",
+  "time": "2022-05-21T13:38:19+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{3 2022-05-21 13:39:10.589148 +0300 EAT 2022-05-21 13:39:10.589148 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambugu Tangazo letu wathutabrian@gmail.com $2a$10$CkMgl.bQ4dEDwBA/v.8YE.pyKW77XDFIiBwH5/eW/y.Kkww1oxWVW}",
+  "time": "2022-05-22T08:23:24+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "ERROR: duplicate key value violates unique constraint \"users_email_key\" (SQLSTATE 23505)",
+  "time": "2022-05-22T08:27:35+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{3 2022-05-21 13:39:10.589148 +0300 EAT 2022-05-21 13:39:10.589148 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambugu Tangazo letu wathutabrian@gmail.com $2a$10$CkMgl.bQ4dEDwBA/v.8YE.pyKW77XDFIiBwH5/eW/y.Kkww1oxWVW}",
+  "time": "2022-05-22T08:28:57+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"connection error: dial tcp 192.168.211.184:43943: connect: network is unreachable\",\"status\":\"Internal Server Error\"}",
+  "time": "2022-05-22T19:43:39+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "{\"id\":\"go.micro.client\",\"code\":500,\"detail\":\"connection error: dial tcp 192.168.211.184:43943: connect: network is unreachable\",\"status\":\"Internal Server Error\"}",
+  "time": "2022-05-22T19:44:29+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}}    }",
+  "time": "2022-05-23T08:32:22+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{5 2022-05-23 08:33:59.958124 +0300 EAT 2022-05-23 08:33:59.958124 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambug Tangazo letu wathutamercy@gmail.com $2a$10$SEzfnM8Y2NhWVpkwdZGtH.UDvti/2CN5J4waEpvWg3m8Ce9dIpe1m}",
+  "time": "2022-05-23T11:18:26+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{5 2022-05-23 08:33:59.958124 +0300 EAT 2022-05-23 08:33:59.958124 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambug Tangazo letu wathutamercy@gmail.com $2a$10$SEzfnM8Y2NhWVpkwdZGtH.UDvti/2CN5J4waEpvWg3m8Ce9dIpe1m}",
+  "time": "2022-05-23T11:19:32+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{5 2022-05-23 08:33:59.958124 +0300 EAT 2022-05-23 08:33:59.958124 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambug Tangazo letu wathutamercy@gmail.com $2a$10$SEzfnM8Y2NhWVpkwdZGtH.UDvti/2CN5J4waEpvWg3m8Ce9dIpe1m}",
+  "time": "2022-05-23T12:45:49+03:00"
+}
+{
+  "file": "/home/brian/WorkSpace/PROGRAMMING/goWorkspace/2022/GRPC/shippy (fork)/user-client/main.go:40",
+  "func": "main.createUser",
+  "level": "info",
+  "msg": "user exists as \u0026{{5 2022-05-23 08:33:59.958124 +0300 EAT 2022-05-23 08:33:59.958124 +0300 EAT {0001-01-01 00:00:00 +0000 UTC false}} brian Wambug Tangazo letu wathutamercy@gmail.com $2a$10$SEzfnM8Y2NhWVpkwdZGtH.UDvti/2CN5J4waEpvWg3m8Ce9dIpe1m}",
+  "time": "2022-05-23T12:49:49+03:00"
+}
